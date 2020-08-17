@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/cbDoneCheck"
+        android:layout_weight=".10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:button="@drawable/custom_checkbox" />
+
+    <LinearLayout
+        android:id="@+id/llTas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".80"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lvTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lvDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lvDatePass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10" />
+
+</LinearLayout>
